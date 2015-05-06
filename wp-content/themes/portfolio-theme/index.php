@@ -20,7 +20,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="navbar-container navbar-fixed" data-pg-collapsed>
+        <div class="navbar-container navbar-fixed">
             <nav class="flexrow flexbottom flexcenter" data-nav-status="toggle" style="height:9rem">
                 <div class="container flexrow flexcenter">
                     <div class="row flexrow flexcenter" style="width:100%; ">
@@ -80,9 +80,37 @@ get_header(); ?>
             </nav>
         </div>
         <div class="section grey section-overflow-visible flexrow flexcenter">
-            <?php bloginfo( 'description' ); ?>
+            <div class="row">
+                <div class="container">
+                    <div class="flexrow flexcenter" data-pg-name="flexrow">
+                        <div class="col m11 s12 l12">
+                            <div class="card overflow-visible z-depth-1 darken-1 blue-grey">
+                                <div class="card-content white blue-grey-text overflow-visible">
+                                    <div class="flexrow flexcenter flexmiddle position-overflow" data-pg-name="flexrow">
+                                        <div class="col s12 l10 m10">
+                                            <div class="flexcolumn flexmiddle" data-pg-name="flexcolumn">
+                                                <img width="151" class="responsive-img image-position" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/Dirk%20Hoofd.png">
+                                                <span class="card-title image-position"><?php _e( 'Dirk Wolthuis&nbsp;', 'portfolio' ); ?></span>
+                                                <p class="image-position"><?php bloginfo( 'description' ); ?></p>
+                                                <div class="flexrow image-position padding-flexrow-dw flexcenter">
+                                                    <a class="btn waves-effect blue waves-light">
+                                                        <?php _e( 'Stuff', 'portfolio' ); ?>
+                                                    </a>
+                                                    <a class="btn red waves-effect waves-light">
+                                                        <?php _e( 'Stuff', 'portfolio' ); ?>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="section light-blue section-dw-height flexrow" data-pg-collapsed>
+        <div class="section light-blue section-dw-height flexrow">
             <div class="container flexrow flexcenter">
                 <div class="row flexrow flexgrow">
                     <div class="col s12 m6 l3 flexcolumn">
@@ -115,7 +143,7 @@ get_header(); ?>
                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icon-creatief.svg" class="responsive-img">
                             </div>
                             <div class="card-image waves-light lochmara card-background-image-crearief flexrow flexcenter flex-vert-bottom">
-                                <div class="caption-transparancy flexrow flexcenter flexmiddle center-text" data-pg-collapsed>
+                                <div class="caption-transparancy flexrow flexcenter flexmiddle center-text">
                                     <p class="white-text"><?php _e( 'creatief', 'portfolio' ); ?></p>
                                 </div>
                             </div>
@@ -139,7 +167,7 @@ get_header(); ?>
         <div class="section section-up-17rem">
             <div class="parallax-container">
                 <div class="parallax">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/paralax1.jpg">
+                    <img src="file:///Users/bert/Nitrous/green-tornado-100/www/wordpress/wp-content/themes/portfolio-theme/assets/img/paralax1.jpg">
                 </div>
             </div>
         </div>
