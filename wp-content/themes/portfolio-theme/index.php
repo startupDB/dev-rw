@@ -20,7 +20,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="navbar-container navbar-fixed">
+        <div class="navbar-container navbar-fixed" data-pg-collapsed>
             <nav class="flexrow flexbottom flexcenter" data-nav-status="toggle" style="height:9rem">
                 <div class="container flexrow flexcenter">
                     <div class="row flexrow flexcenter" style="width:100%; ">
@@ -89,7 +89,7 @@ get_header(); ?>
                                     <div class="flexrow flexcenter flexmiddle position-overflow" data-pg-name="flexrow">
                                         <div class="col s12 l10 m10">
                                             <div class="flexcolumn flexmiddle" data-pg-name="flexcolumn">
-                                                <img width="151" class="responsive-img image-position" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/Dirk%20Hoofd.png">
+                                                <?php the_post_thumbnail(); ?>
                                                 <span class="card-title image-position"><?php _e( 'Dirk Wolthuis&nbsp;', 'portfolio' ); ?></span>
                                                 <p class="image-position"><?php bloginfo( 'description' ); ?></p>
                                                 <div class="flexrow image-position padding-flexrow-dw flexcenter">
@@ -110,7 +110,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="section light-blue section-dw-height flexrow">
+        <div class="section light-blue section-dw-height flexrow" data-pg-collapsed>
             <div class="container flexrow flexcenter">
                 <div class="row flexrow flexgrow">
                     <div class="col s12 m6 l3 flexcolumn">
@@ -167,7 +167,7 @@ get_header(); ?>
         <div class="section section-up-17rem">
             <div class="parallax-container">
                 <div class="parallax">
-                    <img src="file:///Users/bert/Nitrous/green-tornado-100/www/wordpress/wp-content/themes/portfolio-theme/assets/img/paralax1.jpg">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/paralax1.jpg" alt="Spanje">
                 </div>
             </div>
         </div>
@@ -466,7 +466,7 @@ get_header(); ?>
             </div>
         </div>
         <footer class="page-footer light-blue">
-            <div class="container light-blue" data-pg-collapsed>
+            <div class="container light-blue">
                 <div class="row">
                     <div class="col l6 s12">
                         <h5 class="white-text"><?php _e( 'Footer Content', 'portfolio' ); ?></h5>
