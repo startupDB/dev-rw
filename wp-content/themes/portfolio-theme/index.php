@@ -139,7 +139,7 @@ get_header(); ?>
         <div class="section section-up-17rem">
             <div class="parallax-container">
                 <div class="parallax">
-                    <img src="file:///Users/bert/Nitrous/green-tornado-100/www/wordpress/wp-content/themes/portfolio-theme/assets/img/paralax1.jpg">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/assets/img/paralax1.jpg">
                 </div>
             </div>
         </div>
